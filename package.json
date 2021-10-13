@@ -6,6 +6,8 @@
     "start": "node .output/server"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^2.1.1",
+    "nuxt-windicss": "^1.2.5",
     "nuxt3": "latest"
   }
 }
