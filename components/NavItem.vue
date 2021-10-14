@@ -24,7 +24,8 @@ export default defineComponent({
 		return { routeName }
 	},
 	created() {
-		this.isActive = this.routeName === this.href.replace('/', '') 
+		this.isActive = (this.href === '/' && this.routeName === 'index') ||
+ 			(this.routeName === this.href.replace('/', '') )
 	}
 })
 </script>
