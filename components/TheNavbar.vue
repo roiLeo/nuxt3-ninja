@@ -23,7 +23,7 @@
 		>
 			<div class="ml-[-0.60rem]">
 				<!-- <MobileMenu /> -->
-				<NavItem href="/index" text="Home" />
+				<NavItem href="/" text="Home" />
 				<NavItem href="/uses" text="Uses" />
 				<NavItem href="/blog" text="Blog" />
 				<NavItem href="/snippets" text="Snippets" />
@@ -72,6 +72,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
 	setup() {
+		// window is not defined
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
 			document.documentElement.classList.add('dark')
 		else

@@ -6,6 +6,6 @@ export default defineNuxtConfig({
 	],
 	css: [
 		'virtual:windi.css',
-		// '~/assets/css/main.css'
+		// '@/assets/css/main.css'
 	],
 })
