@@ -73,12 +73,14 @@ import { defineComponent } from 'vue'
 export default defineComponent({
 	setup() {
 		// window is not defined
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
-			document.documentElement.classList.add('dark')
-		else
-			document.documentElement.classList.add('light')
+		if (process.browser) {
+			if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+				document.documentElement.classList.add('dark')
+			else
+				document.documentElement.classList.add('light')
+		}
 
-		const resolvedTheme = ref(document.documentElement.className)
+		const resolvedTheme = ref(document.documentElement.className) || {}
 		return { resolvedTheme }
 	},
 	methods: {
