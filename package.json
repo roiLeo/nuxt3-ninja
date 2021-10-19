@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.1.1",
-    "nuxt-windicss": "^1.2.5",
+    "nuxt-windicss": "^2.0.0",
     "nuxt3": "^3.0.0-27243104.5e903ae"
   }
 }
