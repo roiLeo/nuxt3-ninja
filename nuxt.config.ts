@@ -11,5 +11,5 @@ export default defineNuxtConfig({
 		linkActiveClass: 'font-semibold text-gray-800 dark:text-gray-200',
 		linkExactActiveClass: 'font-semibold text-gray-800 dark:text-gray-200',
 	},
-	ssr: false,
+	// ssr: false,
 })
