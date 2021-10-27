@@ -94,6 +94,7 @@ export default defineComponent({
 			toggleTheme,
 			isDarkTheme
 		}
+
 	},
 })
 </script>
