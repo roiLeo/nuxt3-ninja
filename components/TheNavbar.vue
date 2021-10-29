@@ -21,8 +21,9 @@
 				dark:text-gray-100
 			"
 		>
+
 			<div class="ml-[-0.60rem]">
-				<!-- <MobileMenu /> -->
+				<MobileBurger />
 				<NavItem href="/" text="Home" />
 				<NavItem href="/uses" text="Uses" />
 				<NavItem href="/blog" text="Blog" />
