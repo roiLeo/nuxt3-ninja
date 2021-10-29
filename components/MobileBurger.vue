@@ -40,7 +40,7 @@
 	</button>
 	<ul
 		v-show="isMenuOpen"
-		class="menu menuRendered flex flex-col absolute bg-gray-100 dark:bg-gray-900"
+		class="menu menuRendered flex flex-col absolute bg-gray-50 dark:bg-gray-900"
 	>
 		<li
 			class="
@@ -52,7 +52,7 @@
 				font-semibold
 			"
 		>
-			<NuxtLink to="/" class="flex w-auto pb-4"> Home </NuxtLink>
+			<NuxtLink to="/" class="flex w-auto pb-4" @click="toggleMenu"> Home </NuxtLink>
 		</li>
 		<li
 			class="
@@ -64,7 +64,7 @@
 				font-semibold
 			"
 		>
-			<NuxtLink to="/uses" class="flex w-auto pb-4"> Uses </NuxtLink>
+			<NuxtLink to="/uses" class="flex w-auto pb-4" @click="toggleMenu"> Uses </NuxtLink>
 		</li>
 		<li
 			class="
@@ -76,7 +76,7 @@
 				font-semibold
 			"
 		>
-			<NuxtLink to="/blog" class="flex w-auto pb-4"> Blog </NuxtLink>
+			<NuxtLink to="/blog" class="flex w-auto pb-4" @click="toggleMenu"> Blog </NuxtLink>
 		</li>
 		<li
 			class="
@@ -88,7 +88,7 @@
 				font-semibold
 			"
 		>
-			<NuxtLink to="/snippets" class="flex w-auto pb-4">
+			<NuxtLink to="/snippets" class="flex w-auto pb-4" @click="toggleMenu">
 				Snippets
 			</NuxtLink>
 		</li>
@@ -122,6 +122,15 @@ export default defineComponent({
 </script>
 
 <style>
+button:focus {
+	outline: 0!important;
+}
+
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
 .burger {
 	transition: opacity 300ms ease;
 	border: 0;
