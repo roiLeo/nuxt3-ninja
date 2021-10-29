@@ -18,7 +18,7 @@
 			transition-all
 		"
 	>
-		<span className="capsize">{{ text }}</span>
+		{{ text }}
 	</NuxtLink>
 </template>
 
