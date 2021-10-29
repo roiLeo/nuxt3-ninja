@@ -49,6 +49,3 @@ export default defineComponent({
 	},
 })
 </script>
-<style scoped>
-.router-link-active .router-link-exact-active {}
-</style>
