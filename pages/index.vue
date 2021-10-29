@@ -35,15 +35,9 @@
 				</p>
 			</div>
 			<div class="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
-				<!-- ADD IMAGE HERE -->
+				<!-- ADD FUN HERE -->
+				<MouseTrackingEye />
 			</div>
 		</div>
 	</div>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style>
-</style>
