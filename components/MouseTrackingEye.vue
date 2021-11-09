@@ -30,12 +30,6 @@
 
 <script lang="ts" >
 import { ref, defineComponent, onMounted } from 'vue'
-// import {
-// 	debouncedWatch,
-// 	throttledWatch,
-// 	useMouse,
-// 	useWindowSize,
-// } from '@vueuse/core'
 
 export default defineComponent({
 	setup() {
