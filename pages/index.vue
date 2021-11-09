@@ -36,7 +36,8 @@
 			</div>
 			<div class="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
 				<!-- ADD FUN HERE -->
-				<MouseTrackingEye />
+				<!-- <MouseTrackingEye /> -->
+				<!-- NO FUN YET -->
 			</div>
 		</div>
 	</div>
