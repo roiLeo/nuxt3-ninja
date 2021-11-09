@@ -2,10 +2,6 @@ import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
 	buildModules: ['nuxt-windicss'],
-	modules: [
-		// '@vueuse/core',
-		// 'vue-demi'
-	],
 	css: [
 		'virtual:windi.css',
 		// '@/assets/css/main.css'
