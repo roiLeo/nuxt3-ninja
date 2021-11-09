@@ -10,5 +10,6 @@
     "nuxt3": "^3.0.0-27243104.5e903ae"
   },
   "dependencies": {
+    "@vueuse/core": "^6.7.4"
   }
 }
