@@ -1,13 +1,14 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "node .output/server"
-  },
-  "devDependencies": {
-    "@nuxtjs/color-mode": "^2.1.1",
-    "nuxt-windicss": "^2.0.0",
-    "nuxt3": "^3.0.0-27243104.5e903ae"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "nuxt dev",
+		"build": "nuxt build",
+		"start": "node .output/server/index.mjs"
+	},
+	"devDependencies": {
+		"@nuxtjs/color-mode": "^2.1.1",
+		"@vueuse/core": "^6.8.0",
+		"nuxt-windicss": "^2.0.0",
+		"nuxt3": "^3.0.0-27243104.5e903ae"
+	}
 }

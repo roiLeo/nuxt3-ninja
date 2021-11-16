@@ -1,3 +1,45 @@
+<script lang="ts" setup>
+const { x: mouseX, y: mouseY } = useMouse()
+const { width, height } = useWindowSize()
+const eye = ref(null)
+const rotationDegrees = ref(0)
+const eyeLocation = ref(undefined)
+
+const randomEyeContact = () => {
+	rotationDegrees.value =
+		rotationDegrees.value + Math.floor(Math.random() * 360)
+}
+
+onMounted(() => {
+	eyeLocation.value = eye.value.getBoundingClientRect()
+})
+
+debouncedWatch(
+	[width, height],
+	() => {
+		eyeLocation.value = eye.value.getBoundingClientRect()
+	},
+	{ debounce: 200 }
+)
+
+throttledWatch(
+	[mouseX, mouseY],
+	([x, y]) => {
+		if (eyeLocation.value) {
+			const radianDegrees = Math.atan2(
+				x - eyeLocation.value.right,
+				y - eyeLocation.value.top
+			)
+			rotationDegrees.value =
+				radianDegrees * (180 / Math.PI) * -1 + 180
+		}
+	},
+	{ throttle: 1000 / 60 }
+)
+
+// return { eye, rotationDegrees, randomEyeContact }
+</script>
+
 <template>
 	<div @click="randomEyeContact">
 		<svg
@@ -27,60 +69,6 @@
 		</svg>
 	</div>
 </template>
-
-<script lang="ts" >
-import { ref, defineComponent, onMounted } from 'vue'
-import {
-	debouncedWatch,
-	throttledWatch,
-	useMouse,
-	useWindowSize,
-} from '@vueuse/core'
-
-export default defineComponent({
-	setup() {
-		const { x: mouseX, y: mouseY } = useMouse()
-		const { width, height } = useWindowSize()
-		const eye = ref(null)
-		const rotationDegrees = ref(0)
-		const eyeLocation = ref(undefined)
-
-		const randomEyeContact = () => {
-			rotationDegrees.value =
-				rotationDegrees.value + Math.floor(Math.random() * 360)
-		}
-
-		onMounted(() => {
-			eyeLocation.value = eye.value.getBoundingClientRect()
-		})
-
-		debouncedWatch(
-			[width, height],
-			() => {
-				eyeLocation.value = eye.value.getBoundingClientRect()
-			},
-			{ debounce: 200 }
-		)
-
-		throttledWatch(
-			[mouseX, mouseY],
-			([x, y]) => {
-				if (eyeLocation.value) {
-					const radianDegrees = Math.atan2(
-						x - eyeLocation.value.right,
-						y - eyeLocation.value.top
-					)
-					rotationDegrees.value =
-						radianDegrees * (180 / Math.PI) * -1 + 180
-				}
-			},
-			{ throttle: 1000 / 60 }
-		)
-
-		return { eye, rotationDegrees, randomEyeContact }
-	},
-})
-</script>
 
 <style>
 .eye {
