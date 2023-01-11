@@ -1,13 +1,12 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": false,
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "types": [
-      "node"
-    ]
-  }
+	"extends": "./.nuxt/tsconfig.json",
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"strict": false,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"types": ["node"]
+	}
 }
