@@ -6,8 +6,8 @@
 		"start": "node .output/server/index.mjs"
 	},
 	"devDependencies": {
-		"@vueuse/nuxt": "^7.7.0",
-		"nuxt-windicss": "^2.0.0",
-		"nuxt": "latest"
+		"@vueuse/nuxt": "^9.10.0",
+		"nuxt": "latest",
+		"nuxt-windicss": "^2.0.0"
 	}
 }
