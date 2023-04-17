@@ -8,6 +8,6 @@
 	"devDependencies": {
 		"@vueuse/nuxt": "^9.12.0",
 		"nuxt": "^3.3.3",
-		"nuxt-windicss": "^2.0.0"
+		"nuxt-windicss": "^2.6.1"
 	}
 }
