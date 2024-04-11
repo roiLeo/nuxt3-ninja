@@ -15,7 +15,6 @@
 			transition-all
 		"
 	>
-		<!-- <img alt="text alternative" src="/nuxt-icon.png" class="rounded-full" /> -->
 		<h3
 			class="
 				text-lg

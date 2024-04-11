@@ -51,7 +51,7 @@
 				leading-relaxed
 			"
 		>
-			<li class="py-1">13" MacBook Pro (2017)</li>
+			<li class="py-1">13" MacBook Pro M2 16 Go (2022)</li>
 			<li class="py-1">Apple Magic Mouse</li>
 			<li class="py-1">23.5" Monitor</li>
 		</ul>
@@ -172,18 +172,6 @@
 				leading-relaxed
 			"
 		>
-			<li class="py-1">
-				<a
-					class="
-						underline
-						hover:no-underline
-						hover:text-gray-600
-						transition
-					"
-					href="https://www.adobe.com/fr/products/xd.html"
-					>Adobe XD</a
-				>
-			</li>
 			<li class="py-1">
 				<a
 					class="
