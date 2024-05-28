@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@vueuse/core':
-    specifier: ^10.9.0
-    version: 10.9.0(vue@3.4.21)
+    specifier: ^10.10.0
+    version: 10.10.0(vue@3.4.21)
   '@vueuse/nuxt':
     specifier: ^10.10.0
     version: 10.10.0(nuxt@3.11.2)(vue@3.4.21)
@@ -2144,7 +2144,7 @@ packages:
     dependencies:
       '@unocss/reset': 0.59.0
       '@vueuse/components': 10.9.0(vue@3.4.21)
-      '@vueuse/core': 10.9.0(vue@3.4.21)
+      '@vueuse/core': 10.10.0(vue@3.4.21)
       '@vueuse/integrations': 10.9.0(focus-trap@7.5.4)(vue@3.4.21)
       colord: 2.9.3
       floating-vue: 5.2.2(vue@3.4.21)
