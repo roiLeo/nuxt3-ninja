@@ -10,14 +10,12 @@
 	</div>
 </template>
 
-<script lang="ts">
-export default {
-	head: {
-		bodyAttrs: {
-			class: 'bg-white dark:bg-black text-white dark:text-black',
-		},
-	},
-}
+<script setup>
+useHead({
+  bodyAttrs: {
+    class: 'bg-white dark:bg-black text-white dark:text-black'
+  }
+})
 </script>
 
 <style>

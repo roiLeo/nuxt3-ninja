@@ -25,7 +25,7 @@
 					>
 					&amp;
 					<a
-						href="https://windicss.com/"
+						href="https://windicss.org/"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="
@@ -52,7 +52,7 @@
 					<br />
 					The source code is available on
 					<a
-						href="https://github.com/"
+						href="https://github.com/roiLeo/nuxt3-ninja"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="
