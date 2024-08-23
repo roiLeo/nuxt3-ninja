@@ -31,7 +31,7 @@
 					<span class="font-semibold">Web</span>
 				</h2>
 				<p class="text-gray-600 dark:text-gray-400 mb-16">
-					Right now you can find me hacking away primarily with Vue.js, Nuxt.js, Gridsome, GraphQL and in general anything JavaScript, HTML and (S)CSS related. 
+					Right now you can find me hacking away primarily with Vue, Nuxt, Tailwind, AI and in general anything JavaScript, HTML and CSS related. 
 				</p>
 			</div>
 			<div class="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
