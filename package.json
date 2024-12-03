@@ -10,7 +10,7 @@
 	},
 	"devDependencies": {
 		"@vueuse/core": "^12.0.0",
-		"@vueuse/nuxt": "^11.3.0",
+		"@vueuse/nuxt": "^12.0.0",
 		"nuxt": "^3.14.1592",
 		"nuxt-windicss": "^2.6.1"
 	}
