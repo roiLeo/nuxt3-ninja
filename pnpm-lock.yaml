@@ -12,8 +12,8 @@ importers:
         specifier: ^12.0.0
         version: 12.0.0(typescript@5.6.3)
       '@vueuse/nuxt':
-        specifier: ^12.0.0
-        version: 12.0.0(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.5.0)(encoding@0.1.13)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(terser@5.31.6)(typescript@5.6.3)(vite@5.4.11(@types/node@22.5.0)(terser@5.31.6)))(rollup@4.25.0)(typescript@5.6.3)
+        specifier: ^12.2.0
+        version: 12.2.0(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.5.0)(encoding@0.1.13)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(terser@5.31.6)(typescript@5.6.3)(vite@5.4.11(@types/node@22.5.0)(terser@5.31.6)))(rollup@4.25.0)(typescript@5.6.3)
       nuxt:
         specifier: ^3.14.1592
         version: 3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.5.0)(encoding@0.1.13)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(terser@5.31.6)(typescript@5.6.3)(vite@5.4.11(@types/node@22.5.0)(terser@5.31.6))
@@ -1021,16 +1021,25 @@ packages:
   '@vueuse/core@12.0.0':
     resolution: {integrity: sha512-C12RukhXiJCbx4MGhjmd/gH52TjJsc3G0E0kQj/kb19H3Nt6n1CA4DRWuTdWWcaFRdlTe0npWDS942mvacvNBw==}
 
+  '@vueuse/core@12.2.0':
+    resolution: {integrity: sha512-jksyNu+5EGwggNkRWd6xX+8qBkYbmrwdFQMgCABsz+wq8bKF6w3soPFLB8vocFp3wFIzn0OYkSPM9JP+AFKwsg==}
+
   '@vueuse/metadata@12.0.0':
     resolution: {integrity: sha512-Yzimd1D3sjxTDOlF05HekU5aSGdKjxhuhRFHA7gDWLn57PRbBIh+SF5NmjhJ0WRgF3my7T8LBucyxdFJjIfRJQ==}
 
-  '@vueuse/nuxt@12.0.0':
-    resolution: {integrity: sha512-ZSxphoQAX5/EzIUKADcqmoKOpIya7Qi/Lma2iGuLv0YdEAdIcyhTvJ3HwboSuVCPzzovyitY1Ozo+6b0nZ5j5Q==}
+  '@vueuse/metadata@12.2.0':
+    resolution: {integrity: sha512-x6zynZtTh1l52m0y8d/EgzpshnMjg8cNZ2KWoncJ62Z5qPSGoc4FUunmMVrrRM/I/5542rTEY89CGftngZvrkQ==}
+
+  '@vueuse/nuxt@12.2.0':
+    resolution: {integrity: sha512-ffAQOeIahFmp7NmI3dDrKeo3pLMV8S58p+TuEbNYPZ25gET7R3PRq0DpxaWghHXtVXOKVYR+U1nimx9XtpAVyg==}
     peerDependencies:
       nuxt: ^3.0.0
 
   '@vueuse/shared@12.0.0':
     resolution: {integrity: sha512-3i6qtcq2PIio5i/vVYidkkcgvmTjCqrf26u+Fd4LhnbBmIT6FN8y6q/GJERp8lfcB9zVEfjdV0Br0443qZuJpw==}
+
+  '@vueuse/shared@12.2.0':
+    resolution: {integrity: sha512-SRr4AZwv/giS+EmyA1ZIzn3/iALjjnWAGaBNmoDTMEob9JwQaevAocuaMDnPAvU7Z35Y5g3CFRusCWgp1gVJ3Q==}
 
   '@windicss/config@1.9.3':
     resolution: {integrity: sha512-u8GUjsfC9r5X1AGYhzb1lX3zZj8wqk6SH1DYex8XUGmZ1M2UpvnUPOFi63XFViduspQ6l2xTX84QtG+lUzhEoQ==}
@@ -4598,13 +4607,24 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@vueuse/core@12.2.0(typescript@5.6.3)':
+    dependencies:
+      '@types/web-bluetooth': 0.0.20
+      '@vueuse/metadata': 12.2.0
+      '@vueuse/shared': 12.2.0(typescript@5.6.3)
+      vue: 3.5.13(typescript@5.6.3)
+    transitivePeerDependencies:
+      - typescript
+
   '@vueuse/metadata@12.0.0': {}
 
-  '@vueuse/nuxt@12.0.0(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.5.0)(encoding@0.1.13)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(terser@5.31.6)(typescript@5.6.3)(vite@5.4.11(@types/node@22.5.0)(terser@5.31.6)))(rollup@4.25.0)(typescript@5.6.3)':
+  '@vueuse/metadata@12.2.0': {}
+
+  '@vueuse/nuxt@12.2.0(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.5.0)(encoding@0.1.13)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(terser@5.31.6)(typescript@5.6.3)(vite@5.4.11(@types/node@22.5.0)(terser@5.31.6)))(rollup@4.25.0)(typescript@5.6.3)':
     dependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.25.0)
-      '@vueuse/core': 12.0.0(typescript@5.6.3)
-      '@vueuse/metadata': 12.0.0
+      '@vueuse/core': 12.2.0(typescript@5.6.3)
+      '@vueuse/metadata': 12.2.0
       local-pkg: 0.5.1
       nuxt: 3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.5.0)(encoding@0.1.13)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(terser@5.31.6)(typescript@5.6.3)(vite@5.4.11(@types/node@22.5.0)(terser@5.31.6))
       vue: 3.5.13(typescript@5.6.3)
@@ -4615,6 +4635,12 @@ snapshots:
       - typescript
 
   '@vueuse/shared@12.0.0(typescript@5.6.3)':
+    dependencies:
+      vue: 3.5.13(typescript@5.6.3)
+    transitivePeerDependencies:
+      - typescript
+
+  '@vueuse/shared@12.2.0(typescript@5.6.3)':
     dependencies:
       vue: 3.5.13(typescript@5.6.3)
     transitivePeerDependencies:
