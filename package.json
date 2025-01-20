@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"@vueuse/core": "^12.4.0",
 		"@vueuse/nuxt": "^12.4.0",
-		"nuxt": "^3.15.1",
+		"nuxt": "^3.15.2",
 		"nuxt-windicss": "^2.6.1"
 	}
 }
