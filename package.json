@@ -9,7 +9,7 @@
 		"start": "node .output/server/index.mjs"
 	},
 	"devDependencies": {
-		"@vueuse/core": "^13.1.0",
+		"@vueuse/core": "^13.2.0",
 		"@vueuse/nuxt": "^13.2.0",
 		"nuxt": "^3.17.3",
 		"nuxt-windicss": "^2.6.1"
